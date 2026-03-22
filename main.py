@@ -80,15 +80,14 @@ while True:
             topper = df.loc[index]
             print("---------------------------")
             print(f"Topper : {topper['name']}")
-            print()
             print(f"Average : {topper['Average']}")
             print("---------------------------")
 
             low_index = df["Average"].idxmin()
             lowest_marks= df.loc[low_index]
+            print()
             print("---------------------------")
             print(f"Lowest Marks Student:{lowest_marks['name']}")
-            print()
             print(f"Lowest Average -> {lowest_marks['Average']}")
             print("---------------------------")
 
@@ -97,6 +96,6 @@ while True:
             class_avg = np.mean(marks_array)
             print("---------------------------")
             print(f"class Average:  {class_avg}")
-            print("---------------------------")
+            print("----------------------------")
 
             
